@@ -31,10 +31,12 @@
 			</div>
 		</div>
 		<div class='row'>
-			<div class='col-sm-6'>
-				<input class='center-block' type='text' id='userLocation' placeholder='Enter city or zip code'>
+			<div class='col-sm-12'>
+				<input class='center-block text-center' type='text' id='userLocation' placeholder='Enter city or zip code'>
 			</div>
-			<div class='col-sm-6'>
+		</div>
+		<div class='row'>
+			<div class='col-sm-12'>
 				<button class='btn btn-primary center-block' id='submitBtn'>Submit</button>
 			</div>
 		</div>
@@ -50,7 +52,7 @@
 				var apiURL = 'http://api.apixu.com/v1/current.json?key=862a284e6b5f463585304611172106&q=' + userLocation;
 				$.getJSON(apiURL, function(json) {
             		if (json){
-                    	$('#currentWeather').html(json['current']['temp_f'] + ' degrees');
+                    	$('#currentWeather').html(json['current']['temp_f'] + ' <br>degrees');
                     	$('#putUserCity').html('in ' + json['location']['name']);
                     	$('h4').fadeIn(1000);
                     	$('#currentWeather').fadeIn(1000);

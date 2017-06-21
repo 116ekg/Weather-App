@@ -1,3 +1,11 @@
+body {
+	background: #00c3ff;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
+}
+
 h1 {
 	margin-top: 80px;
 }
@@ -6,6 +14,15 @@ h4 {
 	display: none;
 }
 
+input {
+	padding: 4px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
 #currentWeather {
 	display: none;
+	font-size: 80px;
+	margin-bottom: 40px;
+
 }

@@ -51,7 +51,7 @@
 				$.getJSON(apiURL, function(json) {
             		if (json){
                     	$('#currentWeather').html(json['current']['temp_f'] + ' degrees');
-                    	$('#putUserCity').html('in ' + userLocation);
+                    	$('#putUserCity').html('in ' + json['location']['name']);
                     	$('h4').fadeIn(1000);
                     	$('#currentWeather').fadeIn(1000);
                  	}
